@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Retailer Loyalty - Filter Retailer</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+		<meta name="mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="description" content="Retailer Loyalty">
+		<link rel="icon" href="data:;base64,iVBORw0KGgo=">
+
+		<link rel="stylesheet" type="text/css" href="/css/style.css">
+	</head>
+	<body>
+		<div class="page-view has-top-bar edit-profile">
+			<header class="top-bar">
+				<div class="bar-title">
+					<a href="javascript:history.back()"><i class="ic ic-arrow-left"></i></a>
+					<span>Filter</span>
+				</div>
+				<div>
+					<a href="javascript:history.back()">Reset</a>
+				</div>
+			</header>
+
+			<form class="filter-products-form" name="filterForm" method="post" action="javascript:history.back()">
+				<div class="page-content">
+						<div>
+							<div class="form-group">
+								<span>Data range</span>
+								<span class="input-range">
+									<!-- change to date input on focus and text input on blur -->
+									<input type="text" name="dateFrom" placeholder="From" onfocus="(this.type='date')" onblur="(this.type='text')">
+									<!-- change to date input on focus and text input on blur -->
+									<input type="text" name="dateTo" placeholder="To" onfocus="(this.type='date')" onblur="(this.type='text')">
+								</span>
+							</div>
+
+							<label class="form-group bottom">
+								<span>Keywords</span>
+								<input type="text" name="keyword" placeholder="Enter">
+							</label>
+						</div>
+				</div><!-- /page-content -->
+				<footer class="footer-actions">
+					<button type="submit" class="btn btn-primary">Apply</button>
+				</footer>
+			</form>
+		</div><!-- /page-view -->
+
+		<script type="text/javascript" src="./node_modules/requirejs/require.js"></script>
+		<script type="text/javascript" src="./js/app.js"></script>
+	</body>
+</html>

@@ -1,0 +1,66 @@
+.inquiry {
+	letter-spacing: 0.6px;
+	.dropdown-list {
+		margin-left: -35px;
+	}
+	.page-content {
+		display: flex;
+		flex-direction: column;
+	}
+	.form-section {
+		position: relative;
+		height: 100%;
+		padding: 0 9px 54px;
+		margin: 9px -9px -9px;
+		background: white;
+		.card {
+			box-shadow: none;
+		}
+		.agent-details {
+			padding: 0;
+			margin: 10px 0;
+			justify-content: flex-start;		
+		}
+		.user-profile-pic {
+			margin-left: 16px;
+		}
+
+		form {
+			padding: 0 9px;
+		}
+		.form-group {
+			margin-bottom: 15px;
+			border-top: solid 1px #e3e3e3;
+		}
+		.btns-flex {
+			position: absolute;
+			left: 0px;
+			bottom: 9px;
+			.btn {
+				letter-spacing: .6px;
+				margin: 0 9px;
+			}
+		}
+		textarea {
+			letter-spacing: 0.8px;
+		}
+	}
+}
+.btns-flex {
+	width: 100%;
+	display: flex;
+	.btn {
+		width: 100%;
+		margin-top: 15px;
+	}
+	.btn+.btn {
+		margin-left: 9px;
+	}
+
+}
+.inquiry-details {
+	.form-section .user-profile-pic {
+		margin-left: 83px;
+	}
+
+}

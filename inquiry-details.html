@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Retailer Loyalty - Inquiry Details</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+		<meta name="mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="description" content="Retailer Loyalty">
+		<meta name="page" content="inquiry-details">
+		<link rel="icon" href="data:;base64,iVBORw0KGgo=">
+
+		<link rel="stylesheet" type="text/css" href="/css/style.css">
+	</head>
+	<body>
+		<div class="page-view has-top-bar inquiry inquiry-details">
+			<header class="top-bar">
+				<div class="bar-title">
+					<a href="javascript:history.back()"><i class="ic ic-arrow-left"></i></a>
+					<span>Inquiry Details</span>
+				</div>
+				<div class="actions">
+					<span class="more-actions-btn">
+						<i class="ic ic-dots-w"></i>
+
+						<span class="dropdown">
+							<span class="dropdown-list">
+								<label class="select-item">
+									<span>Call Agent</span>
+								</label>
+								<label class="select-item">
+									<span>Email Agent</span>
+								</label>
+							</span><!-- /dropdown-list -->
+						</span><!-- /dropdown -->
+					</span><!-- end more-actions buttons -->
+				</div>
+			</header><!-- end header topbar -->
+
+			<div class="page-content">
+				<!-- the product to be inquired -->
+				<div class="card product-card">
+					<a href="/product.html">
+						<div class="product-image">
+							<img src="/img/product.png" alt="Product">
+						</div><!-- 
+						 --><div class="product-details">
+							<div class="product-name">Lorem Ipsum Product</div>
+							<div class="product-id">#123456789</div>
+							<div class="product-info">
+								<div class="text-center qty">
+									<div class="product-info-name">qty</div>
+									<span class="number val">5</span>
+								</div>
+								<div class="text-center points">
+									<div class="product-info-name">points</div>
+									<span class="badge val">400</span>
+								</div>
+								<div class="scanned">
+									<div class="product-info-name">scan on</div>
+									<span class="val">1 hours ago</span>
+								</div>
+							</div>
+						</div>
+					</a>
+				</div><!-- end product card -->
+
+				<div class="form-section">
+					<div class="card">
+						<div class="agent-details">
+							<span>By</span>
+							<div>
+								<div class="user-profile-pic">
+									<img src="/img/user-pic-1.png" alt="Profile Image">
+								</div>
+								<div class="agent-info">
+									<div class="name">John Doe</div>
+									<div class="status">Retailer Name</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- inquiry form -->
+					<form name="contact" method="post" action="/">
+						<label class="form-group">
+							<span>Title</span>
+							<input name="title" value="Can't sync my sold product" readonly>
+						</label>
+						<label>
+							Messages
+							<textarea name="message" placeholder="Enter" rows="8" readonly>Hi John, can you please check my point of Lorem Ipsum Produk #123456789 in the system? because until now this item didn’t sync yet even i already connect to the internet connection. Thanks</textarea>
+						</label>
+					</form><!-- end inquiry form -->
+
+					<div class="btns-flex">
+						<!-- will open the inquiry popup -->
+						<button class="btn btn-secondary reply-btn">Reply</button>
+						<!-- will navigate back in history -->
+						<a href="javascript:history.back();" class="btn btn-primary">Solved</a>
+					</div>
+				</div>
+			</div><!-- /page-content -->
+		</div><!-- /page-view -->
+
+		<!-- the reply to inquiry popup -->
+		<div class="popup-overlay reply-popup hidden">
+			<div class="popup">
+				<label>
+					<span>Message</span>
+					<textarea name="msg" placeholder="Enter" rows="2"></textarea>
+				</label>
+				<div class="btns-flex">
+					<div class="btn btn-secondary close-modal">Cancel</div>
+					<div class="btn btn-primary close-modal">Reply</div>
+				</div>
+			</div>
+		</div>
+
+		<script type="text/javascript" src="./node_modules/requirejs/require.js"></script>
+		<script type="text/javascript" src="./js/app.js"></script>
+	</body>
+</html>

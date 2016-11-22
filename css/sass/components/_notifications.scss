@@ -1,0 +1,23 @@
+.notifications {
+	display: none;
+	background: $notifications-bg-color;
+	position: absolute;
+	width: 100%;
+	top: 100%;
+
+	.message {
+		color: white;
+		line-height: 45px;
+
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		font-weight: 600;
+		letter-spacing: .6px;
+	}
+
+	.ic-success-sm {
+		margin-right: 9px;
+	}
+}

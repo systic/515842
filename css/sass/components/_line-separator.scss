@@ -1,0 +1,23 @@
+.separator-text-line {
+	display: flex;
+	align-items: center;
+	white-space: nowrap;
+	line-height: 11px;
+
+	text-transform: uppercase;
+
+	&:after, &:before {
+		content: "";
+		display: block;
+		border-top: 1px solid $border-color;
+		width: 50%;
+	}
+
+	&:before {
+		margin-right: 15px;
+	}
+
+	&:after {
+		margin-left: 15px;
+	}
+}

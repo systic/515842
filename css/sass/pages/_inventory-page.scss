@@ -1,0 +1,63 @@
+.page-view.inventory {
+	.top-bar {
+		.actions {
+			.ic-tile-view {
+				display: none;
+			}
+		}
+	}
+
+	.product-card {
+		display: none;
+	}
+
+	.tab-content[data-name="all"] {
+		.product-info {
+			.qty, .updated, .scanned {
+				display: none;
+			}
+		}
+	}
+
+	.tab-content[data-name="stock"] {
+		.product-info {
+			.qty, .points, .scanned, .sold {
+				display: none;
+			}
+
+			.stock {
+				margin-right: 45px;
+			}
+
+			.placeholder {
+				display: block;
+				width: 25px;
+			}
+		}
+
+		.summary-view {
+			@extend .summary-view;
+		}
+	}
+
+	.tab-content[data-name="sold"] {
+		.product-info {
+			.qty, .scanned, .updated, .stock {
+				display: none;
+			}
+
+			.sold {
+				margin-right: 40px;
+			}
+
+			.placeholder {
+				display: block;
+				width: 80px;
+			}
+		}
+
+		.summary-view {
+			@extend .summary-view;
+		}
+	}
+}

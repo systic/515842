@@ -1,0 +1,58 @@
+*, *:before, *:after {
+	box-sizing: border-box;
+}
+
+html, body {
+	height: 100%;
+	font: 16px/25px $main-font, sans-serif;
+	color: $text-color;
+
+	// disable tap highlight on chrome and webkit browsers
+	-webkit-tap-highlight-color:  rgba(255, 255, 255, 0);
+}
+
+a, a:active, a:hover, a:focus {
+	text-decoration: none;
+	color: white;
+}
+
+.col-flex {
+	display: flex;
+	flex-direction: column;
+}
+
+.v-align-content {
+	display: flex;
+	align-items: center;
+}
+
+.wide {
+	width: 100%;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.text-right {
+	text-align: right;
+}
+
+.hidden {
+	/**
+	 * the .hidden class could be used anywhere
+	 * removing the !important would make it useless, as it will be overwriten by every other rule.
+	 */
+	display: none!important;
+}
+
+.retailer-view .retailer-hidden,
+.agent-view .agent-hidden {
+	@extend .hidden;
+}
+
+footer {
+	&.footer-actions {
+		padding: 18px;
+	}
+}

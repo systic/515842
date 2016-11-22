@@ -1,0 +1,103 @@
+.side-menu {
+	position: fixed;
+	height: 100%;
+	width: 252px;
+	z-index:100;
+	margin-left: - 252px;
+	transition: margin .3s ease;
+	line-height: 23px;
+	background-color: white;
+	letter-spacing: 0.66px;
+
+    display: flex;
+    flex-direction: column;
+	.sm-profile{
+		width: 100%;
+		padding: 12px;
+		text-align: center;
+		background: url('../img/sidebar-profile-bg.png') no-repeat center;
+		background-size: cover;
+		color: white;
+	    min-height: 253px;
+		
+		h4 {
+			line-height: 36px;
+			font-weight: 600;
+		}
+		.user-profile-pic {
+			margin: 8px auto;
+		}
+		.name {
+			font-size: 18px;
+		}
+		.retailer {
+			font-size: 16px;
+			font-weight: 600;
+			letter-spacing: .6px;
+		}
+		a {
+			font-size: 13px;
+			line-height: 20px;
+		}
+	}
+	ul {
+		padding: 0;
+		margin: 0;
+
+		display: flex;
+		flex-direction: column;
+		height: 100%;
+		overflow: auto;
+		li {
+			position: relative;
+			padding-left: 44px;
+			&.spacer {
+				line-height: 0;
+				height: 100%;
+			}
+		}
+		a {
+			display: inline-block;
+			width: 100%;
+			color: $text-color;
+			font-size: 17px;
+			font-weight: 600;
+			line-height: 54px;
+		}
+		.menu-item {
+			display: block;
+			border-bottom: solid 1px $border-color;
+		}
+		.ic, .badge {
+			position: absolute;
+			left: 18px;
+			top: 50%;
+			transform: translateY(-50%);
+		}
+		.badge {
+			left: auto;
+			right: 15px;
+			font-size: 13px;
+			padding: 0 6px;
+			line-height: 19px;
+			font-weight: 600;
+		}
+	}
+}
+.has-menu-opened {
+	overflow-x: hidden;
+	.side-menu {
+		margin-left: 0;
+		box-shadow: 0 0 250px rgba(0,0,0,.5);
+	}
+	.page-view {
+		margin-left: 251px;
+	}
+}
+.side-menu-mask {
+	position: fixed;
+	display: none;
+	z-index:50;
+	width: 100vw;
+	height: 100vh;
+}

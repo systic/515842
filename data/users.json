@@ -1,0 +1,24 @@
+{
+	"data": [{
+		"role": "retailer",
+		"avatar": "/img/user-pic-1.png",
+		"username": "jan_retailer",
+		"password": "123456789",
+		"cpassword": "123456789",
+		"name": "Jane Doe",
+		"retailer_id": "#123456789",
+		"retailer_name":"Retailer Name",
+		"address": "Lorem ipsum 9, New York"
+	}, {
+		"id": "123456789",
+		"role": "agent",
+		"avatar": "/img/agent-pic-1.png",
+		"username": "jan_agent",
+		"password": "123456789",
+		"cpassword": "123456789",
+		"name": "John Doe",
+		"retailer_id": "#123456789",
+		"retailer_name":"Retailer Name",
+		"address": "Lorem ipsum 9, New York"
+	}]
+}

@@ -1,0 +1,102 @@
+.top-bar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	min-height: 56px;
+	padding: 0 18px;
+	font-size: 18px;
+	line-height: 15px;
+	color: white;
+	background-color: $primary-color-dark;
+
+	position: relative;
+	z-index: 10;
+
+	> div {
+		display: flex;
+		align-items: center;
+	}
+
+	.bar-title {
+		.ic {
+			margin-right: 18px;
+		}
+		.ic-arrow-left {
+			margin-right: 25px;
+		}
+	}
+
+	.actions {
+		> * {
+			position: relative;
+			line-height: 20px;
+		}
+
+		> * + * {
+			margin-left: 18px;
+		}
+	}
+	.badge {
+		position: absolute;
+		top: -7px;
+		left: 9px;
+		font-size: 10px;
+		line-height: 14px;
+		font-weight: 600;
+		font-style: normal;
+	}
+}
+
+.tabs {
+	position: relative;
+	z-index: 1;
+	display: flex;
+	justify-content: space-around;
+	min-height: 53px;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	background-color: white;
+	box-shadow: 0px 1px 2px 0px rgba(0,0,0,.1), 0px 4px 4px 0px rgba(0,0,0,.05);
+	.tab-item {
+		width: 100%;
+		opacity: .5;
+		font-size: 17px;
+		font-weight: 600;
+		line-height: 50px;
+		color: $text-color;
+		text-align: center;
+		border-bottom: solid 4px white;
+		&.active {
+			opacity: 1;
+			border-color: $primary-color;
+		}
+	}
+}
+.tab-content {
+	display: none;
+	height: calc(100% + 9px);
+	overflow: auto;
+	margin-right: -9px;
+	padding-right: 9px;
+	margin-bottom: -9px;
+	padding-bottom: 9px;
+	&.active {
+		display: block;
+	}
+	&[data-name=points] {
+		height: calc(100% + 18px);
+
+		margin: -9px;
+		padding: 9px;
+	}
+}
+
+.more-actions-btn {
+	.dropdown-list {
+		&:before {
+			left: auto;
+			right: 10%;
+		}
+	}
+}

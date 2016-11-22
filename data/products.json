@@ -1,0 +1,103 @@
+{
+	"data": [{
+		"barcode": "#244293827",
+		"name": "Lorem Ipsum Product",
+		"qty": 5,
+		"stock": 85,
+		"sold": 19,
+		"points": 450,
+		"scanned": "2 hours ago",
+		"updated": "2 hours ago",
+		"time": "11:00<br>PM",
+		"synced": false
+	}, {
+		"barcode": "#556464832",
+		"name": "Lorem Ipsum Product",
+		"qty": 5,
+		"stock": 32,
+		"sold": 86,
+		"soldPlus": "+2",
+		"points": 450,
+		"scanned": "2 hours ago",
+		"updated": "10/31/2016",
+		"time": "7:00<br>PM",
+		"synced": false
+	}, {
+		"barcode": "#578888073",
+		"name": "Lorem Ipsum Product",
+		"qty": 5,
+		"stock": 92,
+		"sold": 67,
+		"points": 450,
+		"scanned": "2 hours ago",
+		"updated": "10/31/2016",
+		"time": "7:00<br>PM",
+		"synced": true
+	}, {
+		"barcode": "#395853203",
+		"name": "Lorem Ipsum Product",
+		"qty": 5,
+		"stock": 61,
+		"sold": 34,
+		"points": 450,
+		"scanned": "2 hours ago",
+		"updated": "10/31/2016",
+		"time": "3:00<br>PM",
+		"synced": true
+	}, {
+		"barcode": "#318222371",
+		"name": "Lorem Ipsum Product",
+		"qty": 5,
+		"stock": 57,
+		"sold": 39,
+		"points": 450,
+		"scanned": "2 hours ago",
+		"updated": "10/31/2016",
+		"time": "1:00<br>PM",
+		"synced": true
+	}, {
+		"barcode": "#363955203",
+		"name": "Lorem Ipsum Product",
+		"qty": 5,
+		"stock": 19,
+		"sold": 53,
+		"points": 450,
+		"scanned": "2 hours ago",
+		"updated": "10/31/2016",
+		"time": "3:00<br>PM",
+		"synced": false
+	}, {
+		"barcode": "#370076813",
+		"name": "Lorem Ipsum Product",
+		"qty": 5,
+		"stock": 98,
+		"sold": 79,
+		"points": 450,
+		"scanned": "2 hours ago",
+		"updated": "10/31/2016",
+		"time": "10:00<br>PM",
+		"synced": true
+	}, {
+		"barcode": "#235588824",
+		"name": "Lorem Ipsum Product",
+		"qty": 5,
+		"stock": 10,
+		"sold": 64,
+		"points": 450,
+		"scanned": "2 hours ago",
+		"updated": "10/31/2016",
+		"time": "5:00<br>PM",
+		"synced": false
+	}, {
+		"barcode": "#732693479",
+		"name": "Lorem Ipsum Product",
+		"qty": 5,
+		"stock": 29,
+		"sold": 48,
+		"points": 450,
+		"scanned": "2 hours ago",
+		"updated": "10/31/2016",
+		"time": "8:00<br>PM",
+		"synced": true
+	}]
+}

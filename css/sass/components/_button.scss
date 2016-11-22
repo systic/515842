@@ -1,0 +1,104 @@
+.btn {
+	border: none;
+	display: block;
+	width: 100%;
+	padding: 0 10px;
+	font-size: 17px;
+	line-height: 45px;
+	font-weight: 600;
+	text-decoration: none;
+	text-transform: uppercase;
+	white-space: nowrap;
+	text-align: center;
+	cursor: pointer;
+	user-select: none;
+	color: white;
+	background: transparent;
+	&.sm {
+		text-transform: none;
+	}
+
+	&.btn-round {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		width: 54px;
+		height: 54px;
+		border-radius: 27px;
+		margin: 0 auto;
+
+		box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.2);
+	}
+
+	&,
+	&:active,
+	&.active {
+		&:focus,
+		&.focus {
+			outline: none;
+		}
+	}
+
+	&:hover, &:focus, &.focus {
+		text-decoration: none;
+		color: white;
+	}
+	&.btn-primary {
+		background-color: $primary-color;
+	}
+	&.btn-secondary {
+		background-color: $secondary-color;
+	}
+	&.disabled,
+	&:disabled {
+		pointer-events: none;
+		background-color: $disabled-color;
+	}
+}
+
+.button-group {
+	.btn {
+		margin-top: 18*$vh;
+		&:first-child {
+			margin-top: 0;
+		}
+	}
+
+	&.inline {
+		display: flex;
+		align-items: center;
+		.btn {
+			margin-top: 0;
+			+ .btn {
+				margin-left: 18px;
+			}
+		}
+	}
+}
+
+.badge,
+.chart-badge {
+	padding: 0 5px;
+	color: white;
+	border-radius: 30px;
+	background-color: $secondary-color;
+}
+
+.chart-badge {
+	display:inline-block;
+	padding: 0 10px;
+	font: 10px/22px $main-font;
+
+	&.badge-primary {
+		background-color: $primary-color;
+	}
+}
+
+.highcharts-container {
+	&[data-type=sold] {
+		.chart-badge {
+			background-color: $primary-color;
+		}
+	}
+}

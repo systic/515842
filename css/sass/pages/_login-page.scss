@@ -1,0 +1,58 @@
+.page-view.login {
+	font-size: 15px;
+	line-height: 15px;
+	padding-top: 25*$vh;
+	padding-bottom: 20*$vh;
+
+	.page-title {
+		margin-top: 132*$vh;
+		line-height: 31px;
+	}
+
+	.social-icons-group {
+		margin-top: 22*$vh;
+	}
+
+	.signup-link {
+		margin-top: 27*$vh;
+		font-size: 17px;
+		line-height: 17px;
+		letter-spacing: .6px;
+		a {
+			font-weight: 600;
+			color: $secondary-color;
+		}
+	}
+
+	.separator-text-line {
+		margin-top: 32*$vh;
+		&:after, &:before {
+			border-color: white;
+		}
+	}
+}
+
+.login-form {
+	margin-top: 80*$vh;
+}
+
+.intro-form-group {
+	&.password {
+		margin-top: 9*$vh;
+	}
+}
+
+.login-links-wrap {
+	margin-top: 14*$vh;
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	font-weight: 600;
+	letter-spacing: .6px;
+
+	a, a:active, a:hover, a:focus {
+		color: white;
+	}
+}

@@ -1,0 +1,31 @@
+.page-view.register {
+	.page-content {
+		padding: 18px;
+		background: white;
+	}
+
+	.separator-text-line {
+		color: $text-color-dark;
+	}
+
+	.social-icons-group {
+		margin-top: 23px;
+	}
+	.form-group {
+		.form-input[readonly], input[readonly] {
+			font-weight: normal;
+			color: $primary-color-dark;
+		}
+	}
+
+	.register-form.invalid {
+		.register-btn {
+			background-color: $btn-disabled-color;
+		}
+	}
+}
+
+.register-btn {
+	margin-top: 36px;
+	letter-spacing: 0.6px;
+}

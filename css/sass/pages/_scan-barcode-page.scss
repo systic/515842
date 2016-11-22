@@ -1,0 +1,45 @@
+.page-view.scan-barcode {
+	.page-content {
+		font-size: 17px;
+		font-weight: 600;
+		color: rgba($text-color, .5);
+
+		text-align: center;
+		background: white;
+
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+		padding-top: 99px;
+	}
+
+	.scan-barcode-btn {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		padding: 18px 0;
+		width: calc(100% + 18px);
+		margin: 0 -9px 60*$vh;
+
+		background-color: $dashboard-bg-color;
+
+		font-weight: 600;
+		letter-spacing: .6px;
+	}
+
+	.scan-failed-msg {
+		color: $error-color;
+		line-height: 25px;
+		margin-top: -16px;
+	}
+
+	.page-state.scan-failed {
+		display: none;
+	}
+
+	footer {
+		padding: 10px 9px;
+	}
+}

@@ -1,0 +1,13 @@
+.edit-profile {
+	@extend .page-view.register;
+
+	.user-profile-pic {
+		margin-top: 10px;
+	}
+
+	.edit-profile-form {
+		input[readonly] {
+			color: $text-color-dark;
+		}
+	}
+}

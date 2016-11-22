@@ -1,0 +1,38 @@
+/* colors */
+$primary-color: #b6c023;
+$primary-color-dark: #6e8916;
+$secondary-color: #f4961c;
+$disabled-color: #aaaaaa;
+$error-color: #ff0000;
+
+$text-color: #3d3d3d;
+$text-color-dark: #282828;
+$text-color-light: #afafaf;
+$border-color: #e3e3e3;
+
+$dashboard-bg-color: #e3e3e3;
+
+$floating-menu-overlay-color: rgba(#282828, .75);
+
+$search-input-text-color: #939393;
+$search-input-bg-color: #d2d2d2;
+
+$notifications-bg-color: rgba(black, .75);
+
+$btn-disabled-color: #aaaaaa;
+
+// social platforms colors
+$soc-google: #d7522e;
+$soc-twitter: #27aae1;
+$soc-fb: #3a5899;
+
+
+/* fonts */
+$main-font: 'Open Sans';
+
+/* media queries */
+$m1: 1024px;
+$m2: 800px;
+$m3: 600px;
+
+$vh: 0.15625vh;

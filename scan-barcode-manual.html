@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Retailer Loyalty - Scan activity</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+		<meta name="mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="description" content="Retailer Loyalty">
+		<meta name="page" content="scan-barcode">
+		<link rel="icon" href="data:;base64,iVBORw0KGgo=">
+
+		<link rel="stylesheet" type="text/css" href="/css/style.css">
+	</head>
+	<body>
+		<div class="page-view has-top-bar">
+			<header class="top-bar">
+				<div class="bar-title">
+					<a href="javascript:history.back()"><i class="ic ic-arrow-left"></i></a>
+					<span>Barcode Scanning</span>
+				</div>
+				<div class="actions">
+					<a href="/scan-barcode.html"><i class="ic ic-scan-w"></i></a>
+					<a href="/scan-activity.html"><i class="ic ic-time-w"></i></a>
+				</div>
+			</header>
+
+			<ul class="tabs">
+				<li class="tab-item" data-name="incoming">Incoming</li>
+				<li class="tab-item active" data-name="sold-prods">Sold</li>
+			</ul><!-- /tabs -->
+
+
+			<div class="page-content v-align-content">
+				<form class="wide" method="get" name="addBarcodeForm" action="/scan-barcode.html#success">
+					<div class="search-input-wrap">
+						<input type="text" class="search-input" name="barcode" placeholder="Enter the product barcode number" autofocus>
+					</div>
+				</form>
+			</div><!-- /page-content -->
+		</div><!-- /page-view -->s
+
+		<script type="text/javascript" src="./node_modules/requirejs/require.js"></script>
+		<script type="text/javascript" src="./js/app.js"></script>
+	</body>
+</html>

@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Retailer Loyalty - My Inventory</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+		<meta name="mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="description" content="Retailer Loyalty">
+		<meta name="page" content="inventory">
+		<link rel="icon" href="data:;base64,iVBORw0KGgo=">
+
+		<link rel="stylesheet" type="text/css" href="/css/style.css">
+	</head>
+	<body>
+		<div class="page-wrap">
+			<aside class="side-menu">
+				<div class="sm-profile">
+					<h4>Placeholder</h4>
+					<div class="user-profile-pic">
+						<img src="/img/agent-pic-1.png" alt="Profile Image" data-reflect-user="avatar" data-reflect-attr="src">
+					</div>
+					<div class="name" data-reflect-user="name"></div>
+					<div class="retailer">
+						<span class="retailer-hidden">id #<span data-reflect-user="id"></span></span>
+						<span class="agent-hidden">Retailer Name</span>
+					</div>
+					<a href="/edit-profile.html">Edit</a>
+				</div><!-- /side menu user profile details -->
+
+				<ul>
+					<li class="agent-hidden">
+						<a href="/dashboard.html"><i class="ic ic-dashboard"></i><span class="menu-item">Dashboard</span></a>
+					</li>
+					<li class="retailer-hidden">
+						<a href="/dashboard-agent.html"><i class="ic ic-dashboard"></i><span class="menu-item">Dashboard</span></a>
+					</li>
+					<li><a href="/notifications.html"><i class="ic ic-notif-dark"></i><span class="menu-item">Notifications</span><span class="badge">2</span></a></li>
+					<li class="cpage agent-hidden">
+						<a href="/my-inventory.html"><i class="ic ic-list"></i><span class="menu-item">My inventory</span></a>
+					</li>
+					<li class="agent-hidden">
+						<a href="/scan-barcode.html"><i class="ic ic-scan"></i><span class="menu-item">Scan Barcode</span></a>
+					</li>
+					<li class="agent-hidden">
+						<a href="/scan-activity.html"><i class="ic ic-time"></i>Scan Activity</a>
+					</li>
+					<li class="retailer-hidden">
+						<a href="/my-retailers.html"><i class="ic ic-ppl"></i>My Retailers</a>
+					</li>
+
+					<li class="spacer"></li>
+					<li class="logout"><a href="/login.html"><i class="ic ic-logout"></i>Logout</a></li>
+				</ul><!-- /side menu nav -->
+			</aside>
+
+			<div class="side-menu-mask"></div>
+
+			<div class="page-view has-top-bar inventory">
+				<header class="top-bar">
+					<div class="bar-title">
+						<i class="ic ic-menu toggle-side-menu"></i>
+						My Inventory
+					</div>
+					<div class="actions">
+						<a href="/filter-product.html"><i class="ic ic-filter"></i></a>
+						<span class="sort-products-btn">
+							<i class="ic ic-sort"></i>
+							<span class="dropdown">
+								<span class="dropdown-list">
+									<label class="select-item">
+										<input type="radio" name="sortProducts">
+										<span>Product name</span>
+									</label>
+									<label class="select-item">
+										<input type="radio" name="sortProducts">
+										<span>Barcode ID</span>
+									</label>
+									<label class="select-item">
+										<input type="radio" checked name="sortProducts">
+										<span>Date &amp; time</span>
+									</label>
+									<label class="select-item">
+										<input type="radio" name="sortProducts">
+										<span>Quantity</span>
+									</label>
+									<label class="select-item">
+										<input type="radio" name="sortProducts">
+										<span>Points</span>
+									</label>
+								</span><!-- /dropdown-list -->
+							</span><!-- /dropdown -->
+						</span><!-- /sort-products -->
+						<i class="ic ic-list-w toggle-tile-view"></i>
+						<i class="ic ic-tile-view toggle-tile-view"></i>
+					</div><!-- /topbar actions -->
+				</header>
+
+				<ul class="tabs">
+					<li class="tab-item active" data-name="all">All</li>
+					<li class="tab-item" data-name="stock">Stock</li>
+					<li class="tab-item" data-name="sold">Sold</li>
+				</ul><!-- /tabs -->
+
+				<!-- search bar revealed when swiping down, hidden when swipping up -->
+				<div class="search-bar">
+					<a href="/search-product.html" class="search-input-wrap">
+						<i class="ic ic-search"></i>
+						<span>Search product</span>
+					</a>
+				</div><!-- search bar -->
+
+				<div class="page-content">
+					<!-- all products tab -->
+					<div class="tab-content active" data-name="all">
+						<!-- the product card template, will be replaced with real products from js -->
+						<div data-href="/product.html" class="card product-card">
+							<div class="product-image">
+								<img src="/img/product.png" alt="Product">
+							</div><!-- 
+						 --><div class="product-details">
+						 		<div class="product-summary">
+									<div class="product-name"></div>
+									<div class="product-id"></div>
+								</div>
+								<div class="product-info">
+									<div class="text-center qty">
+										<div class="product-info-name">qty</div>
+										<span class="number val"></span>
+									</div>
+									<div class="text-center stock">
+										<div class="product-info-name">stock</div>
+										<span class="number val"></span>
+									</div>
+									<div class="text-center sold">
+										<div class="product-info-name">sold</div>
+										<span class="number val"></span>
+									</div>
+									<div class="text-center points">
+										<div class="product-info-name">points</div>
+										<span class="badge val"></span>
+									</div>
+									<div class="updated">
+										<div class="product-info-name">last update</div>
+										<span class="val"></span>
+									</div>
+									<div class="scanned">
+										<div class="product-info-name">scan on</div>
+										<span class="val"></span>
+									</div>
+									<div class="placeholder"></div>
+								</div>
+							</div><!-- /product-details -->
+							<div class="prod-details-btn">
+								<i class="ic ic-dots"></i>
+								<span class="dropdown">
+									<span class="dropdown-list">
+										<span class="select-item">More detail</span>
+										<span class="select-item">Contact agent</span>
+									</span><!-- /dropdown-list -->
+								</span><!-- /dropdown -->
+							</div><!-- /product actions -->
+						</div><!-- /product-card -->
+
+					</div><!-- /tab-content -->
+
+					<!-- stock products tab, will be filled from js -->
+					<div class="tab-content" data-name="stock"></div>
+
+					<!-- sold products tab, will be filled from js -->
+					<div class="tab-content" data-name="sold"></div>
+				</div>
+
+				<!-- the bottom-left orange box -->
+				<div class="popup-side-note">
+					<span class="label">TOTAL</span>
+					<span>25,000</span>
+				</div>
+
+				<!-- the floating + button, which is a nav menu -->
+				<div class="floating-menu">
+					<div class="btn btn-round btn-primary toggle-menu-btn">
+						<i class="ic ic-plus"></i>
+					</div>
+					<ul class="menu-list">
+						<li class="menu-item">
+							<a href="/scan-barcode.html">
+								Add Inventory
+								<span class="menu-btn">
+									<i class="ic ic-msg-sm-w"></i>
+								</span>
+							</a>
+						</li>
+						<li class="menu-item">
+							<a href="/scan-barcode.html">
+								Sell Product
+								<span class="menu-btn">
+									<i class="ic ic-list-w"></i>
+								</span>
+							</a>
+						</li>
+						<li class="menu-item">
+							<a href="/scan-barcode.html">
+								Scan Barcode
+								<span class="menu-btn">
+									<i class="ic ic-scan-w"></i>
+								</span>
+							</a>
+						</li>
+					</ul>
+				</div><!-- end floating menu -->
+			</div>
+		</div>
+
+		<script type="text/javascript" src="./node_modules/requirejs/require.js"></script>
+		<script type="text/javascript" src="./js/app.js"></script>
+	</body>
+</html>

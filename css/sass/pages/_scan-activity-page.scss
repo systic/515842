@@ -1,0 +1,11 @@
+.page-view.scan-activity {
+	.top-bar {
+		.dropdown-list {
+			margin-left: -35px;
+			&:before {
+				left: auto;
+				right: 8px;
+			}
+		}
+	}
+}

@@ -1,0 +1,54 @@
+.popup-overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+
+	padding: 0 18px;
+	font-weight: 600;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	background-color: rgba(black, .5);
+
+	.popup {
+		padding: 24px 18px 22px;
+		width: 100%;
+		background-color: white;
+
+		> p {
+			margin: 0;
+			font-size: 17px;
+			line-height: 17px;
+		}
+
+		.ic {
+			margin: 32px auto 23px;
+		}
+
+		.btn {
+			margin-top: 26px;
+		}
+	}
+}
+
+.popup-side-note {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+
+	line-height: 46px;
+	font-size: 20px;
+	color: white;
+
+	height: 46px;
+	padding: 0 19px;
+	border-top-right-radius: 15px;
+	background-color: $secondary-color;
+	.label {
+		font-size: 12px;
+	}
+}

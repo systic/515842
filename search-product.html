@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Retailer Loyalty - Search Product</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+		<meta name="mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="description" content="Retailer Loyalty">
+		<meta name="page" content="inventory">
+		<link rel="icon" href="data:;base64,iVBORw0KGgo=">
+
+		<link rel="stylesheet" type="text/css" href="/css/style.css">
+	</head>
+	<body>
+		<div class="page-wrap">
+			<div class="page-view has-top-bar inventory">
+				<header class="top-bar">
+					<div class="bar-title">
+						<a href="/my-inventory.html"><i class="ic ic-arrow-left"></i></a>
+						Search Product
+					</div>
+					<div class="actions">
+						<a href="/filter-product.html"><i class="ic ic-filter"></i></a>
+						<span class="sort-products-btn">
+							<i class="ic ic-sort"></i>
+							<span class="dropdown">
+								<span class="dropdown-list">
+									<label class="select-item">
+										<input type="radio" name="sortProducts">
+										<span>Product name</span>
+									</label>
+									<label class="select-item">
+										<input type="radio" name="sortProducts">
+										<span>Barcode ID</span>
+									</label>
+									<label class="select-item">
+										<input type="radio" checked name="sortProducts">
+										<span>Date &amp; time</span>
+									</label>
+									<label class="select-item">
+										<input type="radio" name="sortProducts">
+										<span>Quantity</span>
+									</label>
+									<label class="select-item">
+										<input type="radio" name="sortProducts">
+										<span>Points</span>
+									</label>
+								</span><!-- /dropdown-list -->
+							</span><!-- /dropdown -->
+						</span><!-- /sort-products -->
+						<i class="ic ic-list-w toggle-tile-view"></i>
+						<i class="ic ic-tile-view toggle-tile-view"></i>
+					</div><!-- /topbar actions -->
+				</header>
+
+				<ul class="tabs">
+					<li class="tab-item active" data-name="all">All 990</li>
+					<li class="tab-item" data-name="stock">Stock 450</li>
+					<li class="tab-item" data-name="sold">Sold 540</li>
+				</ul><!-- /tabs -->
+
+				<div class="search-bar visible input">
+					<div class="search-input-wrap">
+						<i class="ic ic-search"></i>
+						<input class="search-input" type="text" name="productQuery" placeholder="Search product" autofocus>
+					</div>
+
+					<div class="search-status">
+						<span>Recent search</span>
+						<a class="clear-all-btn" href="javascript:;">Clear all</a>
+					</div>
+				</div>
+
+
+				<div class="page-content">
+					<div class="tab-content active" data-name="all">
+						<div data-href="/product.html" class="card product-card">
+							<div class="product-image">
+								<img src="/img/product.png" alt="Product">
+							</div><!-- 
+						 --><div class="product-details">
+						 		<div class="product-summary">
+									<div class="product-name"></div>
+									<div class="product-id"></div>
+								</div>
+								<div class="product-info">
+									<div class="text-center qty">
+										<div class="product-info-name">qty</div>
+										<span class="number val"></span>
+									</div>
+									<div class="text-center stock">
+										<div class="product-info-name">stock</div>
+										<span class="number val"></span>
+									</div>
+									<div class="text-center sold">
+										<div class="product-info-name">sold</div>
+										<span class="number val"></span>
+									</div>
+									<div class="text-center points">
+										<div class="product-info-name">points</div>
+										<span class="badge val"></span>
+									</div>
+									<div class="updated">
+										<div class="product-info-name">last update</div>
+										<span class="val"></span>
+									</div>
+									<div class="scanned">
+										<div class="product-info-name">scan on</div>
+										<span class="val"></span>
+									</div>
+									<div class="placeholder"></div>
+								</div>
+							</div><!-- /product-details -->
+						</div><!-- /product-card -->
+					</div><!-- /tab-content -->
+					<div class="tab-content" data-name="stock"></div>
+					<div class="tab-content" data-name="sold"></div>
+				</div>
+			</div>
+		</div>
+
+		<script type="text/javascript" src="./node_modules/requirejs/require.js"></script>
+		<script type="text/javascript" src="./js/app.js"></script>
+	</body>
+</html>

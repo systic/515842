@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Retailer Loyalty - Scan activity</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+		<meta name="mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="description" content="Retailer Loyalty">
+		<meta name="page" content="scan-barcode">
+		<link rel="icon" href="data:;base64,iVBORw0KGgo=">
+
+		<link rel="stylesheet" type="text/css" href="/css/style.css">
+	</head>
+	<body>
+		<div class="page-view has-top-bar scan-barcode">
+			<header class="top-bar">
+				<div class="bar-title">
+					<a href="javascript:history.back()"><i class="ic ic-arrow-left"></i></a>
+					<span>Barcode Scanning</span>
+				</div>
+				<div class="actions">
+					<a href="/scan-barcode-manual.html"><i class="ic ic-edit-xl"></i></a>
+					<a href="/scan-activity.html"><i class="ic ic-time-w"></i></a>
+				</div>
+			</header>
+
+			<ul class="tabs">
+				<li class="tab-item" data-name="incoming">Incoming</li>
+				<li class="tab-item active" data-name="sold-prods">Sold</li>
+				<li class="notifications">
+					<div class="message">
+						<i class="ic ic-round ic-success-sm"></i>
+						Scanning Success!
+					</div>
+				</li>
+			</ul><!-- /tabs -->
+
+
+			<div class="page-state default">
+				<div class="page-content">
+					<div class="scan-barcode-btn">
+						<img src="/img/barcode.png" alt="Scan">
+					</div>
+					<div>Scan the product barcode or QR</div>
+				</div><!-- /page-content -->
+
+				<footer class="footer-actions">
+					<button class="btn btn-round btn-primary scan-btn">
+						<i class="ic ic-scan-w"></i>
+					</button>
+				</footer>
+			</div>
+
+			<div class="page-state scan-failed">
+				<div class="page-content">
+					<div class="scan-barcode-btn">
+						<img src="/img/barcode-r.png" alt="Scan">
+					</div>
+					<div class="scan-failed-msg">
+						Product not found in system.<br>
+						Please contact your Agent.
+					</div>
+				</div><!-- /page-content -->
+
+				<footer class="footer-actions">
+					<div class="button-group inline failed-action-btns">
+						<button class="btn btn-primary scan-btn">
+							Scan Another
+						</button>
+						<a href="/inquiry.html" class="btn btn-secondary">
+							Contact Agent
+						</a>
+					</div>
+				</footer>
+			</div>
+		</div><!-- /page-view -->
+
+		<script type="text/javascript" src="./node_modules/requirejs/require.js"></script>
+		<script type="text/javascript" src="./js/app.js"></script>
+	</body>
+</html>

@@ -1,0 +1,29 @@
+{
+  "name": "retailer-loyalty",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "dependencies": {
+    "jquery": "^3.1.1",
+    "jquery-hammerjs": "^2.0.0",
+    "requirejs": "^2.3.2",
+    "highcharts": "v5.0.3"
+  },
+  "devDependencies": {
+  },
+  "scripts": {
+    "sass": "sass --style=expanded css/sass/main.scss:./css/style.css",
+    "scss:dev": "sass --watch --style=expanded css/sass/main.scss:./css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/user/retailer-loyalty.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/user/retailer-loyalty/issues"
+  },
+  "homepage": "https://github.com/user/retailer-loyalty#readme"
+}

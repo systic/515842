@@ -1,0 +1,97 @@
+.retailer-detail {
+	.retailer-about {
+		position: relative;
+		margin-right: 0;
+		padding: 20px 25px;
+		.ic-badge {
+			position: absolute;
+			top: 8px;
+			right: 9px;
+		}
+		.agent-info .status {
+			font-size: 17px;
+		}
+		.agent-details {
+			padding: 0;
+		}
+		.user-profile-pic {
+			width: 54px;
+			height: 54px;
+		}
+		.col4, .col6 {
+			display: inline-block;
+			vertical-align: top;
+		}
+		.col6 {
+			width: 66%;
+		}
+		.col4 {
+			width: 33%;
+		}
+		.top-section .col4 {
+			text-align: center;
+			border-right: solid 1px $border-color;
+			font-size: 25px;
+			font-weight: 600;
+			line-height: 28px;
+			&.points * {
+				margin-bottom: -5px;
+			}
+			&:last-of-type {
+				border: none;
+			}
+			*:not(.badge) {
+				font-weight: 600;
+				letter-spacing: .6px;
+				font-size: 15px;
+				color: $text-color-light;
+				text-transform: uppercase;
+			}
+			.badge {
+				display: inline-block;
+				padding: 0 10px;
+				font-size: 16px;
+				line-height: 32px;
+			}
+		}
+		.bottom-section {
+			margin-top: 28px;
+			padding-top: 13px;
+			border-top: solid 1px $border-color;
+			>div {
+				padding: 5px 0;
+			}
+			.col6 {
+				position: relative;
+				padding-left: 17px;
+				&:before {
+					content: ':';
+					position: absolute;
+					left: 7px;
+					display: block;
+				}
+			}
+			.col4 {
+				font-weight: 600;
+			}
+			.green-color {
+				color: $primary-color-dark;
+				text-decoration: underline;
+			}
+		}
+	}
+
+	.product-card {
+		display: none;
+		.dropdown-list {
+			top: -7px;
+			right: -8px;
+		}
+	}
+
+	.product-card.summary-view{
+		.qty, .stock, .updated, .scanned {
+			display: none;
+		}
+	}
+}

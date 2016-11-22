@@ -1,0 +1,494 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Retailer Loyalty - Dashboard - Agent</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+		<meta name="mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="description" content="Retailer Loyalty">
+		<meta name="page" content="dashboard">
+		<link rel="icon" href="data:;base64,iVBORw0KGgo=">
+
+		<link rel="stylesheet" type="text/css" href="/css/style.css">
+	</head>
+	<body>
+		<div class="page-wrap">
+			<aside class="side-menu">
+				<div class="sm-profile">
+					<h4>Placeholder</h4>
+					<div class="user-profile-pic">
+						<img src="/img/agent-pic-1.png" alt="Profile Image" data-reflect-user="avatar" data-reflect-attr="src">
+					</div>
+					<div class="name" data-reflect-user="name"></div>
+					<div class="retailer">
+						<span class="retailer-hidden">id #<span data-reflect-user="id"></span></span>
+						<span class="agent-hidden">Retailer Name</span>
+					</div>
+					<a href="/edit-profile.html">Edit</a>
+				</div><!-- /side menu user profile details -->
+
+				<ul>
+					<li class="cpage agent-hidden">
+						<a href="/dashboard.html"><i class="ic ic-dashboard"></i><span class="menu-item">Dashboard</span></a>
+					</li>
+					<li class="cpage retailer-hidden">
+						<a href="/dashboard-agent.html"><i class="ic ic-dashboard"></i><span class="menu-item">Dashboard</span></a>
+					</li>
+					<li>
+						<a href="/notifications.html"><i class="ic ic-notif-dark"></i><span class="menu-item">Notifications</span><span class="badge">2</span></a>
+					</li>
+					<li class="agent-hidden">
+						<a href="/my-inventory.html"><i class="ic ic-list"></i><span class="menu-item">My inventory</span></a>
+					</li>
+					<li class="agent-hidden">
+						<a href="/scan-barcode.html"><i class="ic ic-scan"></i><span class="menu-item">Scan Barcode</span></a>
+					</li>
+					<li class="agent-hidden">
+						<a href="/scan-activity.html"><i class="ic ic-time"></i>Scan Activity</a>
+					</li>
+					<li class="retailer-hidden">
+						<a href="/my-retailers.html"><i class="ic ic-ppl"></i>My Retailers</a>
+					</li>
+
+					<li class="spacer"></li>
+					<li class="logout">
+						<a href="/login.html"><i class="ic ic-logout"></i>Logout</a>
+					</li>
+				</ul><!-- /side menu nav -->
+			</aside>
+
+			<div class="side-menu-mask"></div>
+
+			<div class="page-view has-top-bar dashboard">
+				<header class="top-bar">
+					<div class="bar-title">
+						<i class="ic ic-menu toggle-side-menu"></i>
+						Dashboard
+					</div>
+					<div class="edit-btns">
+						<span class="add-section-btn">
+							+Add
+							<span class="dropdown">
+								<span class="dropdown-list">
+									<label>
+										<input class="check-visible" type="checkbox" checked name="myProfile">
+										<span>My profile</span>
+									</label>
+									<label>
+										<input class="check-visible" type="checkbox" checked name="sallingVisible">
+										<span>Salling</span>
+									</label>
+									<label>
+										<input class="check-visible" type="checkbox" checked name="inqVisible">
+										<span>Rcnt. inquires</span>
+									</label>
+									<label>
+										<input class="check-visible" type="checkbox" checked name="reatilersVisible">
+										<span>My retailers</span>
+									</label>
+									<label>
+										<input class="check-visible" type="checkbox" checked name="leaderboardVisible">
+										<span>Leaderboard</span>
+									</label>
+								</span>
+							</span><!-- end +add dropdown -->
+						</span>
+						<span class="edit-board">Done</span>
+					</div><!-- end topbar edit-buttons -->
+					<div class="actions">
+						<span>
+							<i class="ic ic-notif">
+								<span class="badge">2</span>
+							</i>
+						</span>
+						<span class="export-btn">
+							<i class="ic ic-share"></i>
+							<span class="dropdown">
+								<span class="dropdown-list">
+									<span class="select-item">to Pdf file</span>
+									<span class="select-item">to Excel</span>
+									<span class="select-item">to Word</span>
+								</span><!-- /dropdown-list -->
+							</span><!-- /dropdown -->
+						</span><!-- /export-btn -->
+						<span><i class="ic ic-settings edit-board"></i></span>
+					</div><!-- end topbar actions list -->
+				</header>
+				
+				<div class="page-content">
+					<div class="cards">
+						<!-- my profile card -->
+						<div class="card collapsible">
+							<div class="card-header">
+								<div>
+									<div class="card-title">My Profile</div>
+								</div>
+								<div class="edit-btns">
+									<label class="toggle-btn">
+										<input class="check-visible" type="checkbox" name="myProfile" checked><span></span>
+									</label>
+									<i class="ic ic-move"></i>
+								</div>
+								<div><a href="/edit-profile.html">Edit</a></div>
+							</div>
+							<div class="card-content profile-details">
+								<div class="top-section">
+									<div><span>retailer</span>40</div>
+									<div class="user-profile-pic">
+										<img src="/img/agent-pic-1.png" alt="Edit" data-reflect-user="avatar" data-reflect-attr="src">
+										<span class="badge-type"><i class="ic ic-badge-gold"></i></span>
+									</div>
+									<div><span>sold</span>250</div>
+								</div>
+								<div class="bottom-section agent">
+									<div><a href="/my-retailers.html"><i class="ic ic-ppl-xl"></i></a></div>
+									<div class="retailer-details">
+										<div class="name" data-reflect-user="name">John Doe</div>
+										<div class="retailer">
+											<span>ID #</span><span data-reflect-user="id">123456789</span>
+										</div>
+									</div>
+									<div><i class="ic ic-bars-xl"></i></div>
+								</div>
+							</div>
+						</div><!-- end dashboard card my profile -->
+
+						<!-- statistics card -->
+						<div class="card collapsible">
+							<div class="card-header">
+								<div>
+									<div class="card-title">Salling Statistics</div>
+								</div>
+								<div class="edit-btns">
+									<label class="toggle-btn">
+										<input class="check-visible" type="checkbox" name="sallingVisible" checked><span></span>
+									</label>
+									<i class="ic ic-move"></i>
+								</div>
+								<span class="dropdown has-label select-stats-type">
+									<span class="dropdown-label">
+										<span class="label">Points</span>
+										<i class="ic ic-arrow-down"></i>
+									</span>
+									<span class="dropdown-list">
+										<label class="select-item">
+											<input type="radio" name="statsType" value="points" checked>
+											<span>Points</span>
+										</label>
+										<label class="select-item">
+											<input type="radio" name="statsType" value="sold">
+											<span>Sold quantity</span>
+										</label>
+									</span><!-- /dropdown-list -->
+								</span><!-- /dropdown -->
+							</div>
+							<div class="card-content">
+								<div id="chart-container" class="chart-container"></div>
+								<div class="chart-actions">
+									<div class="current-date">September 8, 2016</div>
+									<div>
+										<span class="chart-action active">Weekly</span>
+										<span class="chart-action">Monthly</span>
+									</div>
+								</div>
+							</div>
+						</div><!-- end dashboard card statistics -->
+
+						<!-- recent inquires card -->
+						<div class="card list-card collapsible">
+							<div class="card-header">
+								<div>
+									<div class="card-title">Recent Inquires</div>
+								</div>
+								<div class="edit-btns">
+									<label class="toggle-btn">
+										<input class="check-visible" type="checkbox" name="inqVisible" checked><span></span>
+									</label>
+									<i class="ic ic-move"></i>
+								</div>
+								<span class="dropdown has-label">
+									<span class="dropdown-label">
+										Sort by <span class="label">time</span>
+										<i class="ic ic-arrow-down"></i>
+									</span>
+									<span class="dropdown-list">
+										<label class="select-item">
+											<input type="radio" name="inqSort" checked>
+											<span>time</span>
+										</label>
+										<label class="select-item">
+											<input type="radio" name="inqSort">
+											<span>retailer</span>
+										</label>
+									</span><!-- /dropdown-list -->
+								</span><!-- /dropdown -->
+							</div>
+							<div class="card-content">
+								<ul class="card-list">
+									<li class="card-list-item" data-href="/notifications.html">
+										<div class="summary">
+											<div class="product-name">Can’t sync my sold product</div>
+											<div class="product-id sm">By Jane Doe . Retailer Name</div>
+										</div>
+										<div class="card-details-btn">
+											<i class="ic ic-dots"></i>
+											<span class="dropdown">
+												<span class="dropdown-list">
+													<span class="select-item">Detail</span>
+													<span class="select-item">Mark as solved</span>
+												</span><!-- /dropdown-list -->
+											</span><!-- /dropdown -->
+										</div><!-- /card actions -->
+									</li>
+									<li class="card-list-item" data-href="/notifications.html">
+										<div class="summary">
+											<div class="product-name">Can’t sync my sold product</div>
+											<div class="product-id fn">By Jane Doe . Retailer Name</div>
+										</div>
+										<div class="card-details-btn">
+											<i class="ic ic-dots"></i>
+											<span class="dropdown">
+												<span class="dropdown-list">
+													<span class="select-item">Detail</span>
+													<span class="select-item">Mark as solved</span>
+												</span><!-- /dropdown-list -->
+											</span><!-- /dropdown -->
+										</div><!-- /card actions -->
+									</li>
+									<li class="card-list-item" data-href="/notifications.html">
+										<div class="summary">
+											<div class="product-name">Can’t sync my sold product</div>
+											<div class="product-id fn">By Jane Doe . Retailer Name</div>
+										</div>
+										<div class="card-details-btn">
+											<i class="ic ic-dots"></i>
+											<span class="dropdown">
+												<span class="dropdown-list">
+													<span class="select-item">Detail</span>
+													<span class="select-item">Mark as solved</span>
+												</span><!-- /dropdown-list -->
+											</span><!-- /dropdown -->
+										</div><!-- /card actions -->
+									</li>
+								</ul>
+								<a href="/notifications.html" class="card-bottom-link">All inquires</a>
+							</div>
+						</div><!-- end dashboard list card inquires -->
+
+						<!-- my retailers card -->
+						<div class="card list-card collapsible">
+							<div class="card-header">
+								<div>
+									<div class="card-title">My retailers</div>
+								</div>
+								<div class="edit-btns">
+									<label class="toggle-btn">
+										<input class="check-visible" type="checkbox" name="reatilersVisible" checked><span></span>
+									</label>
+									<i class="ic ic-move"></i>
+								</div>
+								<span class="dropdown has-label">
+									<span class="dropdown-label">
+										Sort by <span class="label">name</span>
+										<i class="ic ic-arrow-down"></i>
+									</span>
+									<span class="dropdown-list">
+										<label class="select-item">
+											<input type="radio" name="sortInq" checked>
+											<span>name</span>
+										</label>
+										<label class="select-item">
+											<input type="radio" name="sortInq">
+											<span>points</span>
+										</label>
+									</span><!-- /dropdown-list -->
+								</span><!-- /dropdown -->
+							</div>
+							<div class="card-content">
+								<ul class="card-list">
+									<li class="card-list-item" data-href="/retailer-detail.html">
+										<div class="agent-details">
+											<div>
+												<div class="user-profile-pic">
+													<img src="/img/user-pic-1.png" alt="Profile Image">
+												</div>
+												<div class="agent-info">
+													<div class="name">Jane Doe</div>
+													<div class="status">Retail Name</div>
+												</div>
+											</div>
+											<div class="agent-points">
+												<div><div>sold</div>999</div>
+												<div><div>points</div><span class="badge">25,000</span></div>
+											</div>
+										</div>
+										<div class="card-details-btn">
+											<i class="ic ic-dots"></i>
+											<span class="dropdown">
+												<span class="dropdown-list">
+													<span class="select-item">Detail</span>
+													<span class="select-item">View Inquiry</span>
+												</span><!-- /dropdown-list -->
+											</span><!-- /dropdown -->
+										</div><!-- /card actions -->
+									</li>
+									<li class="card-list-item" data-href="/retailer-detail.html">
+										<div class="agent-details">
+											<div>
+												<div class="user-profile-pic">
+													<img src="/img/agent-pic-1.png" alt="Profile Image">
+												</div>
+												<div class="agent-info">
+													<div class="name">John Doe</div>
+													<div class="status">Retail Name</div>
+												</div>
+											</div>
+											<div class="agent-points">
+												<div><div>sold</div>999</div>
+												<div><div>points</div><span class="badge">23,000</span></div>
+											</div>
+										</div>
+										<div class="card-details-btn">
+											<i class="ic ic-dots"></i>
+											<span class="dropdown">
+												<span class="dropdown-list">
+													<span class="select-item">Detail</span>
+													<span class="select-item">View Inquiry</span>
+												</span><!-- /dropdown-list -->
+											</span><!-- /dropdown -->
+										</div><!-- /card actions -->
+									</li>
+									<li class="card-list-item" data-href="/retailer-detail.html">
+										<div class="agent-details">
+											<div>
+												<div class="user-profile-pic">
+													<img src="/img/user-pic-2.png" alt="Profile Image">
+												</div>
+												<div class="agent-info">
+													<div class="name">Jessica Doe</div>
+													<div class="status">Retail Name</div>
+												</div>
+											</div>
+											<div class="agent-points">
+												<div><div>sold</div>999</div>
+												<div><div>points</div><span class="badge">21,000</span></div>
+											</div>
+										</div>
+										<div class="card-details-btn">
+											<i class="ic ic-dots"></i>
+											<span class="dropdown">
+												<span class="dropdown-list">
+													<span class="select-item">Detail</span>
+													<span class="select-item">View Inquiry</span>
+												</span><!-- /dropdown-list -->
+											</span><!-- /dropdown -->
+										</div><!-- /card actions -->
+									</li>
+								</ul>
+								<a href="/my-retailers.html" class="card-bottom-link">All retailers</a>
+							</div>
+						</div><!-- end dashboard list card my reatilers -->
+
+						<!-- leaderboard card -->
+						<div class="card list-card collapsible">
+							<div class="card-header">
+								<div>
+									<div class="card-title">Leaderboard</div>
+								</div>
+								<div class="edit-btns">
+									<label class="toggle-btn">
+										<input class="check-visible" type="checkbox" name="leaderboardVisible" checked><span></span>
+									</label>
+									<i class="ic ic-move"></i>
+								</div>
+								<span class="dropdown has-label">
+									<span class="dropdown-label">
+										<span class="label">This week</span>
+										<i class="ic ic-arrow-down"></i>
+									</span>
+									<span class="dropdown-list">
+										<label class="select-item">
+											<input type="radio" name="sortLead" checked>
+											<span>This week</span>
+										</label>
+										<label class="select-item">
+											<input type="radio" name="sortLead">
+											<span>This month</span>
+										</label>
+									</span><!-- /dropdown-list -->
+								</span><!-- /dropdown -->
+							</div>
+							<div class="card-content">
+								<ul class="card-list leaderboard">
+									<li class="card-list-item" data-href="/retailer-detail.html">
+										<div class="agent-details">
+											<div class="agent-place">1</div>
+											<div>
+												<div class="user-profile-pic">
+													<img src="/img/user-pic-1.png" alt="Profile Image">
+												</div>
+												<div class="agent-info">
+													<div class="name">Jane Doe</div>
+													<div class="status">Retail Name</div>
+												</div>
+											</div>
+											<div class="agent-points">
+												<div><div>sold</div>999</div>
+												<div><div>points</div><span class="badge">25,000</span></div>
+											</div>
+										</div>
+									</li>
+									<li class="card-list-item" data-href="/retailer-detail.html">
+										<div class="agent-details">
+											<div class="agent-place">2</div>
+											<div>
+												<div class="user-profile-pic">
+													<img src="/img/agent-pic-1.png" alt="Profile Image">
+												</div>
+												<div class="agent-info">
+													<div class="name">John Doe</div>
+													<div class="status">Retail Name</div>
+												</div>
+											</div>
+											<div class="agent-points">
+												<div><div>sold</div>999</div>
+												<div><div>points</div><span class="badge">23,000</span></div>
+											</div>
+										</div>
+									</li>
+									<li class="card-list-item" data-href="/retailer-detail.html">
+										<div class="agent-details">
+											<div class="agent-place">3</div>
+											<div>
+												<div class="user-profile-pic">
+													<img src="/img/user-pic-2.png" alt="Profile Image">
+												</div>
+												<div class="agent-info">
+													<div class="name">Jessica Doe</div>
+													<div class="status">Retail Name</div>
+												</div>
+											</div>
+											<div class="agent-points">
+												<div><div>sold</div>999</div>
+												<div><div>points</div><span class="badge">21,000</span></div>
+											</div>
+										</div>
+									</li>
+								</ul>
+								<a href="/leaderboard.html" class="card-bottom-link">All leaderboard</a>
+							</div>
+						</div><!-- end dashboard list card leaderboard card -->
+					</div><!-- end cards list -->
+				</div><!-- end page content -->
+			</div><!-- end page view -->
+		</div>
+
+		<script type="text/javascript" src="./node_modules/jquery/dist/jquery.min.js"></script>
+		<script type="text/javascript" src="http://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
+		<script type="text/javascript" src="./node_modules/requirejs/require.js"></script>
+		<script type="text/javascript" src="./js/app.js"></script>
+	</body>
+</html>

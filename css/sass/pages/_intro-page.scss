@@ -1,0 +1,151 @@
+.page-view.intro {
+	background: url('/img/intro-bg.png');
+	background-size: cover;
+	color: white;
+
+	padding: 25px 18px 80px;
+	position: relative;
+
+	text-align: center;
+	&.splash-screen {
+		height: 100%;
+	}
+
+	.page-title {
+		margin-top: 15px;
+		margin-bottom: 48px;
+		&.mt {
+			margin-top: 139px;
+		}
+	}
+}
+
+.intro-placeholder {
+	height: 100%;
+	h1 {
+		width: 100%;
+		margin-top: 55px;
+	}
+}
+
+.intro-loader {
+	width: 100%;
+	position: absolute;
+	left: 0;
+	bottom: 23px;
+}
+
+$highlight-box-size: 216px;
+.intro-highlight {
+	height: $highlight-box-size;
+	width: $highlight-box-size;
+	margin: 0 auto 38px;
+	background-color: rgba(black, .25);
+
+	border-radius: $highlight-box-size/2;
+	&.img {
+		position: relative;
+		&:after {
+			content: "";
+			position: absolute;
+			top: -1px;
+			left: -1px;
+			right: -1px;
+			bottom: -1px;
+			border: 6px solid white;
+			border-radius: 50%;
+		}
+	}
+	img {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+	}
+}
+
+.intro-steps {
+	position: relative;
+	margin: 0 -18px;
+	width: 100%;
+	padding: 0 18px;
+	overflow: hidden;
+	box-sizing: content-box;
+}
+
+.intro-steps-wrapper {
+	position: relative;
+}
+
+.intro-step {
+	width: 100%;
+
+	position: absolute;
+	top: 0;
+	left: calc(-100% - 100px);
+
+	transition: left .25s ease-in-out;
+
+	&.active {
+		left: 0;
+		position: relative;
+		& ~ .intro-step {
+			left: calc(100% + 100px);
+		}
+	}
+}
+
+.landing, .intro-step {
+	> p {
+		white-space: pre-wrap;
+		word-break: break-all;
+	}
+}
+
+.intro-steps-pagination {
+	display: flex;
+	justify-content: center;
+
+	.step {
+		width: 5px;
+		height: 5px;
+		border-radius: 5px;
+		background-color: white;
+		margin-right: 8px;
+		&:last-child {
+			margin-right: 0;
+		}
+
+		&.active {
+			background-color: $primary-color;
+		}
+	}
+}
+
+.intro-nav {
+	// margin-top: 43px;
+	> ul {
+		position: absolute;
+		left: 18px;
+		right: 18px;
+		bottom: 20px;
+
+		margin: 0;
+		padding: 0;
+		list-style: none;
+
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		> li {
+			width: calc(50% - 9px);
+			&:last-child:not(:nth-child(2)) {
+				width: 100%;
+			}
+
+			> .btn {
+				width: 100%;
+			}
+		}
+	}
+}

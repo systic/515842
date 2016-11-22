@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Retailer Loyalty - Retailer Detail</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+		<meta name="mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="description" content="Retailer Loyalty">
+		<meta name="page" content="retailer-detail">
+		<link rel="icon" href="data:;base64,iVBORw0KGgo=">
+
+		<link rel="stylesheet" type="text/css" href="/css/style.css">
+	</head>
+	<body>
+		<div class="page-view has-top-bar retailer-detail">
+			<header class="top-bar">
+				<div class="bar-title">
+					<a href="javascript:history.back()"><i class="ic ic-arrow-left"></i></a>
+					<span>Retailer Detail</span>
+				</div>
+				<div class="actions">
+					<span class="more-actions-btn">
+						<i class="ic ic-settings"></i>
+					</span>
+				</div>
+			</header>
+
+			<ul class="tabs">
+				<li class="tab-item active" data-name="about">About</li>
+				<li class="tab-item" data-name="inquiry">Inquiry (2)</li>
+				<li class="tab-item" data-name="points">Points</li>
+			</ul><!-- /tabs -->
+
+			<div class="page-content">
+				<div class="tab-content active card retailer-about" data-name="about">
+					<i class="ic ic-badge ic-badge-gold"></i>
+					<div class="agent-details">
+						<div>
+							<div class="user-profile-pic">
+								<img src="/img/user-pic-1.png" alt="Profile Image">
+							</div>
+							<div class="agent-info">
+								<div class="name">John Doe</div>
+								<div class="status">Retailer Name</div>
+							</div>
+						</div>
+					</div>
+					<div class="top-section">
+						<div class="col4">
+							<div>stock</div>450
+						</div><!-- 
+						 --><div class="col4"><div>sold</div>
+							245
+						</div><!-- 
+						 --><div class="col4 points">
+							<div>points</div><span class="badge">25,000</span>
+						</div>
+					</div>
+					<div class="bottom-section">
+						<div>
+							<div class="col4">Join on</div><!-- 
+							 --><div class="col6">12/12/2016</div>
+						</div>
+						<div>
+							<div class="col4">Retailer ID</div><!-- 
+							 --><div class="col6">#123456789</div>
+						</div>
+						<div>
+							<div class="col4">Location</div><!-- 
+							 --><div class="col6">Lorem Ipsum Street 99 New York, USA</div>
+						</div>
+						<div>
+							<div class="col4">Phone</div><!-- 
+							 --><div class="col6 green-color">(+62) 8170 310 5557</div>
+						</div>
+						<div>
+							<div class="col4">Email</div><!-- 
+							 --><div class="col6 green-color">janedoe@xample.com</div>
+						</div>
+					</div>
+				</div><!-- /tab-content -->
+					
+				<div class="tab-content" data-name="inquiry">
+					<div data-href="/inquiry-details.html" class="card notif-card">
+						<div class="card-header">
+							<div class="notif-name">Can’t sync my sold product</div>
+							<div class="card-details-btn">
+								<i class="ic ic-dots"></i>
+								<span class="dropdown">
+									<span class="dropdown-list">
+										<span class="select-item">Detail</span>
+										<span class="select-item">Mark as solved</span>
+									</span><!-- /dropdown-list -->
+								</span><!-- /dropdown -->
+							</div><!-- /card actions -->
+						</div>
+						<div class="notif-text">
+							<div class="notif-descr">Hi John, can you please check my point of Lorem Ipsum Produk <span class="notif-id">#123456789</span> in the asd asd asd</div>
+							<div class="notif-time">2 minutes ago</div>
+						</div>
+					</div><!-- /card -->
+					
+					<div data-href="/inquiry-details.html" class="card notif-card">
+						<button onclick="event.preventDefault()" class="status sync"><i class="ic ic-check"></i></button>
+						<div class="card-header">
+							<div class="notif-name">Lorem ipsum dolor sit title</div>
+							<div class="card-details-btn">
+								<i class="ic ic-dots"></i>
+								<span class="dropdown">
+									<span class="dropdown-list">
+										<span class="select-item">Detail</span>
+										<span class="select-item">Mark as solved</span>
+									</span><!-- /dropdown-list -->
+								</span><!-- /dropdown -->
+							</div><!-- /card actions -->
+						</div>
+						<div class="notif-text">
+							<div class="notif-descr">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh asd asd</div>
+							<div class="notif-time">2 days ago <span class="notif-status">Solved</span></div>
+						</div>
+					</div><!-- /card -->
+				</div><!-- /tab-content -->
+
+				<div class="tab-content" data-name="points">
+					<div class="card">
+						<div class="card-header">
+							<div>
+								<div class="card-legend">Total <span class="badge">25,000</span></div>
+							</div>
+							<div class="edit-btns">
+								<label class="toggle-btn">
+									<input class="check-visible" type="checkbox" name="statistics" checked><span></span>
+								</label>
+								<i class="ic ic-move"></i>
+							</div>
+							<span class="dropdown has-label select-stats-type">
+								<span class="dropdown-label">
+									<span class="label">Points</span>
+									<i class="ic ic-arrow-down"></i>
+								</span>
+								<span class="dropdown-list">
+									<label class="select-item">
+										<input type="radio" name="statsType" value="points" checked>
+										<span>Points</span>
+									</label>
+									<label class="select-item">
+										<input type="radio" name="statsType" value="sold">
+										<span>Sold quantity</span>
+									</label>
+								</span><!-- /dropdown-list -->
+							</span><!-- /dropdown -->
+						</div>
+						<div class="card-content">
+							<div id="chart-container" class="chart-container"></div>
+							<div class="chart-actions">
+								<div class="current-date">September 8, 2016</div>
+								<div>
+									<span class="chart-action active">Weekly</span>
+									<span class="chart-action">Monthly</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div data-href="/product.html" class="card product-card has-extras summary-view">
+						<div class="product-extras">
+							<span></span>
+						</div>
+						<div class="product-image">
+							<img src="/img/product.png" alt="Product">
+						</div><!-- 
+					 --><div class="product-details">
+					 		<div class="product-summary">
+								<div class="product-name"></div>
+								<div class="product-id"></div>
+							</div>
+							<div class="product-info">
+								<div class="text-center qty">
+									<div class="product-info-name">qty</div>
+									<span class="number val"></span>
+								</div>
+								<div class="text-center stock">
+									<div class="product-info-name">stock</div>
+									<span class="number val"></span>
+								</div>
+								<div class="text-center sold">
+									<div class="product-info-name">sold</div>
+									<span class="number val"></span>
+								</div>
+								<div class="text-center points">
+									<div class="product-info-name">points</div>
+									<span class="badge val"></span>
+								</div>
+								<div class="updated">
+									<div class="product-info-name">last update</div>
+									<span class="val"></span>
+								</div>
+								<div class="scanned">
+									<div class="product-info-name">scan on</div>
+									<span class="val"></span>
+								</div>
+								<div class="placeholder"></div>
+							</div>
+						</div><!-- /product-details -->
+						<div class="prod-details-btn">
+							<i class="ic ic-dots"></i>
+							<span class="dropdown">
+								<span class="dropdown-list">
+									<span class="select-item">More detail</span>
+									<span class="select-item">Contact</span>
+								</span><!-- /dropdown-list -->
+							</span><!-- /dropdown -->
+						</div><!-- /product actions -->
+					</div><!-- /product-card -->
+				</div><!-- /tab-content -->
+					
+			</div><!-- /page-content -->
+		</div><!-- /page-view -->
+
+		<script type="text/javascript" src="./node_modules/requirejs/require.js"></script>
+		<script type="text/javascript" src="./js/app.js"></script>
+	</body>
+</html>

@@ -1,0 +1,111 @@
+.dropdown {
+	position: absolute;
+	display: inline-flex;
+	justify-content: center;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 9;
+	&:before {
+		content: "";
+		width: 100vw;
+		height: 100vh;
+		position: fixed;
+		left: 0;
+		top: 56px;
+		background: rgba(0,0,0,0.5);
+		z-index: 1;
+
+		display: none;
+	}
+
+	&.has-label {
+		position: relative;
+	}
+
+	.dropdown-label {
+		font-weight: 600;
+		font-size: 15px;
+
+		.ic-arrow-down {
+			margin-left: 5px;
+		}
+	}
+
+	&.active {
+		&:before, .dropdown-list {
+			display: block;
+		}
+
+		.ic-arrow-down {
+			transform: rotate(180deg);
+		}
+	}
+}
+
+.dropdown-list {
+	position: absolute;
+	top: calc(100% + 18px);
+	z-index: 1;
+
+	white-space: nowrap;
+	line-height: 35px;
+	background: white;
+
+	display: none;
+
+	&:before {
+		content: "";
+		display: block;
+		position: absolute;
+		top: -1px;
+		left: 50%;
+		width: 13px;
+		height: 13px;
+		background: white;
+		transform: rotate(45deg) translateX(-7px);
+	}
+
+	label, .select-item {
+		font-size: 15px;
+		font-weight: 600;
+		color: $text-color;
+		text-align: center;
+		display: block;
+		padding: 0 12px;
+
+		& + label,
+		& + .select-item {
+			border-top: 1px solid $border-color;
+		}
+
+		input[type=checkbox],
+		input[type=radio] {
+			display: none;
+			&:checked + span {
+				color: $primary-color-dark;
+			}
+		}
+
+		input[type=checkbox] {
+			&:checked + span {
+				&:after {
+					content: "";
+					width: 10px;
+					height: 8px;
+					display: inline-block;
+					margin: 0 -16px 0 6px;
+					background: url('/img/icon-sprite.png') no-repeat 0 -635px;
+					background-size: 51px 800px;
+				}
+			}
+		}
+	}
+}
+
+ul.dropdown-list {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}

@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Retailer Loyalty - Norifications</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+		<meta name="mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="description" content="Retailer Loyalty">
+		<meta name="page" content="notifications">
+		<link rel="icon" href="data:;base64,iVBORw0KGgo=">
+
+		<link rel="stylesheet" type="text/css" href="/css/style.css">
+	</head>
+	<body>
+		<div class="page-wrap">
+			<aside class="side-menu">
+				<div class="sm-profile">
+					<h4>Placeholder</h4>
+					<div class="user-profile-pic">
+						<img src="/img/agent-pic-1.png" alt="Profile Image" data-reflect-user="avatar" data-reflect-attr="src">
+					</div>
+					<div class="name" data-reflect-user="name"></div>
+					<div class="retailer">
+						<span class="retailer-hidden">id #<span data-reflect-user="id"></span></span>
+						<span class="agent-hidden">Retailer Name</span>
+					</div>
+					<a href="/edit-profile.html">Edit</a>
+				</div><!-- /side menu user profile details -->
+
+				<ul>
+					<li class="agent-hidden">
+						<a href="/dashboard.html"><i class="ic ic-dashboard"></i><span class="menu-item">Dashboard</span></a>
+					</li>
+					<li class="retailer-hidden">
+						<a href="/dashboard-agent.html"><i class="ic ic-dashboard"></i><span class="menu-item">Dashboard</span></a>
+					</li>
+					<li class="cpage"><a href="/notifications.html"><i class="ic ic-notif-dark"></i><span class="menu-item">Notifications</span><span class="badge">2</span></a></li>
+					<li class="agent-hidden">
+						<a href="/my-inventory.html"><i class="ic ic-list"></i><span class="menu-item">My inventory</span></a>
+					</li>
+					<li class="agent-hidden">
+						<a href="/scan-barcode.html"><i class="ic ic-scan"></i><span class="menu-item">Scan Barcode</span></a>
+					</li>
+					<li class="agent-hidden">
+						<a href="/scan-activity.html"><i class="ic ic-time"></i>Scan Activity</a>
+					</li>
+					<li class="retailer-hidden">
+						<a href="/my-retailers.html"><i class="ic ic-ppl"></i>My Retailers</a>
+					</li>
+
+					<li class="spacer"></li>
+					<li class="logout"><a href="/login.html"><i class="ic ic-logout"></i>Logout</a></li>
+				</ul>
+			</aside>
+
+			<div class="side-menu-mask"></div>
+
+			<div class="page-view has-top-bar">
+				<header class="top-bar">
+					<div class="bar-title">
+						<i class="ic ic-menu toggle-side-menu"></i>
+						<span>Notifications</span>
+					</div>
+					<div class="actions">
+						<span class="more-actions-btn">
+							<i class="ic ic-settings"></i>
+						</span>
+					</div>
+				</header>
+
+				<ul class="tabs">
+					<li class="tab-item active" data-name="all">All</li>
+					<li class="tab-item" data-name="inquiry">Inquiry</li>
+				</ul><!-- /tabs -->
+
+				<div class="page-content">
+					<!-- all notifications tab -->
+					<div class="tab-content active" data-name="all">
+						<div data-href="/inquiry-details.html" class="card notif-card">
+							<div class="card-header">
+								<div class="notif-name new">Can’t sync my sold product</div>
+								<div class="card-details-btn">
+									<i class="ic ic-dots"></i>
+									<span class="dropdown">
+										<span class="dropdown-list">
+											<span class="select-item">Detail</span>
+											<span class="select-item">Mark as solved</span>
+										</span><!-- /dropdown-list -->
+									</span><!-- /dropdown -->
+								</div><!-- /card actions -->
+							</div>
+							<div class="notif-text">
+								<div class="notif-user">By Jane Doe. Retailer Name</div>
+								<div class="notif-descr">Hi John, can you please check my point of Lorem Ipsum Produk <span class="notif-id">#123456789</span> in the asd asd asd</div>
+								<div class="notif-time">2 minutes ago</div>
+							</div>
+						</div><!-- /card -->
+						
+						<div data-href="/inquiry-details.html" class="card notif-card">
+							<div class="card-header">
+								<div class="notif-name new">Lorem ipsum dolor sit title</div>
+								<div class="card-details-btn">
+									<i class="ic ic-dots"></i>
+									<span class="dropdown">
+										<span class="dropdown-list">
+											<span class="select-item">Detail</span>
+											<span class="select-item">Mark as solved</span>
+										</span><!-- /dropdown-list -->
+									</span><!-- /dropdown -->
+								</div><!-- /card actions -->
+							</div>
+							<div class="notif-text">
+								<div class="notif-user">By Jane Doe. Retailer Name</div>
+								<div class="notif-descr">Hi John, can you please check my point of Lorem Ipsum Produk <span class="notif-id">#123456789</span> in the asd asd asd</div>
+								<div class="notif-time">2 minutes ago</div>
+							</div>
+						</div><!-- /card -->
+						
+						<div data-href="/inquiry-details.html" class="card notif-card">
+							<button onclick="event.preventDefault()" class="status sync"><i class="ic ic-check"></i></button>
+							<div class="card-header">
+								<div class="notif-name">Lorem ipsum dolor sit title</div>
+								<div class="card-details-btn">
+									<i class="ic ic-dots"></i>
+									<span class="dropdown">
+										<span class="dropdown-list">
+											<span class="select-item">Detail</span>
+											<span class="select-item">Mark as solved</span>
+										</span><!-- /dropdown-list -->
+									</span><!-- /dropdown -->
+								</div><!-- /card actions -->
+							</div>
+							<div class="notif-text">
+								<div class="notif-user">By Mike Doe.  Retailer Name</div>
+								<div class="notif-descr">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh asd asd</div>
+								<div class="notif-time">2 days ago <span class="notif-status">Solved</span></div>
+							</div>
+						</div><!-- /card -->
+						
+						<div data-href="/inquiry-details.html" class="card notif-card">
+							<button onclick="event.preventDefault()" class="status sync"><i class="ic ic-check"></i></button>
+							<div class="card-header">
+								<div class="notif-name">Lorem ipsum dolor sit title</div>
+								<div class="card-details-btn">
+									<i class="ic ic-dots"></i>
+									<span class="dropdown">
+										<span class="dropdown-list">
+											<span class="select-item">Detail</span>
+											<span class="select-item">Mark as solved</span>
+										</span><!-- /dropdown-list -->
+									</span><!-- /dropdown -->
+								</div><!-- /card actions -->
+							</div>
+							<div class="notif-text">
+								<div class="notif-user">By Mike Doe.  Retailer Name</div>
+								<div class="notif-descr">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh asd asd</div>
+								<div class="notif-time">2 days ago <span class="notif-status">Solved</span></div>
+							</div>
+						</div><!-- /card -->
+					</div><!-- end all notif tab -->
+
+					<!-- inquiry notifications tab -->
+					<div class="tab-content" data-name="inquiry">
+						<div data-href="/inquiry-details.html" class="card notif-card">
+							<div class="card-header">
+								<div class="notif-name new">Can’t sync my sold product</div>
+								<div class="card-details-btn">
+									<i class="ic ic-dots"></i>
+									<span class="dropdown">
+										<span class="dropdown-list">
+											<span class="select-item">Detail</span>
+											<span class="select-item">Mark as solved</span>
+										</span><!-- /dropdown-list -->
+									</span><!-- /dropdown -->
+								</div><!-- /card actions -->
+							</div>
+							<div class="notif-text">
+								<div class="notif-user">By Jane Doe. Retailer Name</div>
+								<div class="notif-descr">Hi John, can you please check my point of Lorem Ipsum Produk <span class="notif-id">#123456789</span> in the asd asd asd</div>
+								<div class="notif-time">2 minutes ago</div>
+							</div>
+						</div><!-- /card -->
+						
+						<div data-href="/inquiry-details.html" class="card notif-card">
+							<div class="card-header">
+								<div class="notif-name new">Lorem ipsum dolor sit title</div>
+								<div class="card-details-btn">
+									<i class="ic ic-dots"></i>
+									<span class="dropdown">
+										<span class="dropdown-list">
+											<span class="select-item">Detail</span>
+											<span class="select-item">Mark as solved</span>
+										</span><!-- /dropdown-list -->
+									</span><!-- /dropdown -->
+								</div><!-- /card actions -->
+							</div>
+							<div class="notif-text">
+								<div class="notif-user">By Jane Doe. Retailer Name</div>
+								<div class="notif-descr">Hi John, can you please check my point of Lorem Ipsum Produk <span class="notif-id">#123456789</span> in the asd asd asd</div>
+								<div class="notif-time">2 minutes ago</div>
+							</div>
+						</div><!-- /card -->
+					</div><!-- end inquiry notifications tab -->
+
+				</div><!-- /page-content -->
+			</div><!-- /page-view -->
+		</div><!-- /page-wrap -->
+
+		<script type="text/javascript" src="./node_modules/requirejs/require.js"></script>
+		<script type="text/javascript" src="./js/app.js"></script>
+	</body>
+</html>

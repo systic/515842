@@ -1,0 +1,145 @@
+.page-view.dashboard {
+	.top-bar {
+		.edit-btns {
+			font-size: 15px;
+			font-weight: 600;
+			display: none;
+
+			span + span {
+				margin-left: 24px;
+			}
+		}
+
+		&.edit-mode {
+			.edit-btns {
+				display: block;
+				+ div {
+					display: none;
+				}
+			}
+		}
+	}
+
+	.add-section-btn {
+		position: relative;
+
+		.dropdown-list {
+			width: 162px;
+		}
+	}
+
+	.export-btn {
+		.dropdown-list {
+			width: 126px;
+		}
+	}
+
+	.profile-details {
+		position: relative;
+		margin-top: 18px;
+		text-align: center;
+		letter-spacing: 0.6px;
+		font-weight: 600;
+		.top-section {
+			display: flex;
+			align-items: center;
+			font-size: 25px;
+			line-height: 30px;
+			>* {
+				width: 100%;
+			}
+			span {
+				display: block;
+				font-size: 15px;
+				color: $text-color-light;
+				text-transform: uppercase;
+				font-weight: normal;
+			}
+			.badge-type {
+				position: absolute;
+				top: 72%;
+				left: 72%;
+			}
+		}
+		.bottom-section {
+			margin: 15px 0 18px;
+			line-height: 23px;
+			.name {
+				font-size: 18px;
+			}
+			.retailer {
+				font-size: 16px;
+				color: $primary-color-dark;
+			}
+			.badge {
+				display: inline-block;
+				margin-top: 10px;
+				font-size: 20px;
+				line-height: 46px;
+				padding: 0 16px;
+				font-weight: normal;
+				span {
+					font-size: 12px;
+					text-transform: uppercase;
+				}
+			}
+			.ic {
+				position: absolute;
+				bottom: 15px;
+				right: 33px;
+			}
+			&.agent {
+				display: flex;
+				align-items: center;
+				font-size: 25px;
+				line-height: 24px;
+				>* {
+					width: 100%;
+					&:nth-child(2) {
+						min-width: 135px;
+					}
+				}
+				.ic {
+					position: relative;
+					right: auto;
+					bottom: auto;
+				}
+			}
+		}
+	}
+}
+#chart-container {
+	padding-top: 20px;
+	height: 155px;
+	.highcharts-credits {
+		display: none;
+	}
+	.highcharts-container {
+		&, & * {
+			overflow: visible!important;
+		}
+	}
+}
+
+.chart-actions {
+	display: flex;
+	font-size: 13px;
+	font-weight: 600;
+	padding: 10px 0px 15px 8px;
+	>* {
+		width: 100%;
+	}
+	.current-date {
+		color: $primary-color-dark;
+	}
+	.chart-action {
+		display: inline-block;
+		width: 48%;
+		color: #aaa;
+		text-align: right;
+		&.active {
+			color: $primary-color;
+		}
+
+	}
+}

@@ -1,0 +1,28 @@
+.page-wrap {
+	height: 100%;
+}
+
+.page-view {
+	min-height: 100%;
+	margin-left: 0;
+	width: 100%;
+	transition: margin-left .3s ease;
+	&.has-top-bar {
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+	}
+}
+
+.page-content {
+	height: 100%;
+	overflow: auto;
+	background-color: $dashboard-bg-color;
+	padding: 9px;
+}
+
+.page-state {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+}
